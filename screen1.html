@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Screen 1 🎂</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle,#2b1206,#000);
+    font-family: Arial;
+}
+
+.card{
+    background:#fff3e6;
+    width:380px;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    border:5px solid #5a2c0f;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+/* hidden message */
+#msg{
+    display:none;
+    color:#5a2c0f;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.cake{
+    font-size:90px;
+    margin:10px 0;
+}
+
+.choco{
+    font-size:22px;
+    margin:5px 0;
+}
+
+button{
+    padding:10px 15px;
+    background:#5a2c0f;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div id="msg">🎉 HAPPY BDAY MISS TANU 🎉</div>
+
+    <div class="choco">🍫 🍫 🍫 🍫 🍫</div>
+
+    <div class="cake">🎂</div>
+
+    <div class="choco">🍫 🍫 🍫 🍫 🍫</div>
+
+    <button onclick="blowCandles()">Blow Candles 🕯️</button>
+
+</div>
+
+<script>
+
+function blowCandles(){
+
+    // show message
+    document.getElementById("msg").style.display = "block";
+
+    // ⏱️ 5 second delay before next screen
+    setTimeout(function(){
+        window.location.href = "screen2.html";
+    }, 5000);
+
+}
+
+</script>
+
+</body>
+</html>
